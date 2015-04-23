@@ -1,0 +1,31 @@
+<div class="newsletter">
+ {% if settings.newsletter_enabled %}
+              <h6 class="title">{{ settings.newsletter_text }}</h6>
+              {% if settings.newsletter_description != blank %}
+                <p>{{ settings.newsletter_description }}</p>
+              {% endif %}
+
+            {% endif %}
+  {% if settings.newsletter_system == 'mailchimp' %}
+    <form action="{{ settings.mailchimp_link }}" method="post" name="mc-embedded-subscribe-form" class="contact-form" target="_blank">
+  	   <input type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email address..." required/>
+  	   <input type="submit" value="Sign Up" name="subscribe" class="action_button sign_up" />
+    </form>
+  {% else %}    
+    {% form 'customer' %}
+      {% if form.posted_successfully? %}
+        <p><em>Thank you for joining our mailing list!</em></p>
+      {% elsif form.errors %}
+        {% for field in form.errors %}
+          <p><em>{{ field }} - {{ form.errors.messages[field] }}</em></p>
+        {% endfor %}
+      {% endif %}
+
+      <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+      <input type="hidden" name="contact[first_name]" value="Newsletter" />
+      <input type="hidden" name="contact[last_name]" value="Subscriber" />
+      <input type="email" name="contact[email]" required pattern="[^ @]*@[^ @]*" placeholder="Enter your email address..." />
+      <input type='submit' class="action_button sign_up" value="Sign Up" />
+    {% endform %}
+  {% endif %}
+</div>

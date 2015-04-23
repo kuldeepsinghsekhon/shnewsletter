@@ -1,0 +1,69 @@
+<fieldset>
+  <legend>Newsletter Popup</legend>
+  <table>
+  <tr>
+      <th><label for="newsletter_enabled">Newsletter Sign Up Form</label></th>
+      <td>
+        <input type="checkbox" id="newsletter_enabled" name="newsletter_enabled" />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_text">Newsletter Title Text</label></th>
+      <td><input name="newsletter_text" type="text" id="newsletter_text" value="Newsletter" /></td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_description">Newsletter Description Text</label></th>
+      <td><input name="newsletter_description" type="text" id="newsletter_description" value="" /></td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_system">Newsletter System</label></th>
+      <td>
+        <input type="radio" name="newsletter_system" value="shopify" /> Shopify
+        <br />
+        <input type="radio" name="newsletter_system" value="mailchimp" /> <a href="http://mailchimp.com/">MailChimp</a>
+      </td>
+    </tr>
+    <tr>
+      <th><label for="mailchimp_link">MailChimp Form Action URL </label></th>
+      <td>
+        <input type="text" id="mailchimp_link" name="mailchimp_link" value="" />
+      </td>
+    </tr>  
+  </table>
+</fieldset>
+<fieldset>
+  <legend>Newsletter Popup</legend>
+  <table>
+    <tr>
+      <td colspan="2"><small>To test this feature, set the number of days until the popup is displayed again to 0.</small></td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_popup">Popup Enabled?</label></th>
+      <td>
+        <input type="checkbox" id="newsletter_popup" name="newsletter_popup" value="1" />
+      </td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_popup_form">Display Newsletter Form?</label></th>
+      <td>
+        <input type="checkbox" id="newsletter_popup_form" name="newsletter_popup_form" checked="checked" value="1" />
+      </td>
+    </tr>       
+    <!--<tr>
+      <th><label for="newsletter_popup_page">Popup Content Page</label></th>
+      <td><select class="page" name="newsletter_popup_page" id="newsletter_popup_page" /></td>
+    </tr>-->
+    <tr>
+      <th><label for="newsletter_popup_seconds">Seconds until Popup is Displayed</label></th>
+      <td><input id="newsletter_popup_seconds" name="newsletter_popup_seconds" size="3" value="2" /> seconds</td>
+    </tr>
+    <tr>
+      <th><label for="newsletter_popup_days">Days until Popup is Displayed Again</label></th>
+      <td><input id="newsletter_popup_days" name="newsletter_popup_days" size="3" value="30" /> days</td>
+    </tr>   
+    <tr>
+      <th><label for="newsletter_popup_max_width">Popup Maximum Width</label></th>
+      <td><input id="newsletter_popup_max_width" name="newsletter_popup_max_width" size="3" value="600" />px</td>
+    </tr>    
+  </table>
+</fieldset>
