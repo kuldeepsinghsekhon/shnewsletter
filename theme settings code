@@ -67,3 +67,87 @@
     </tr>    
   </table>
 </fieldset>
+
+
+-----------------------------------------------------------------------------------------
+
+
+
+
+
+  {
+    "name": "Newsletter Popup",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "newsletter_enabled",
+        "label": "Newsletter Sign Up Form"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_text",
+        "label": "Newsletter Title Text"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_description",
+        "label": "Newsletter Description Text"
+      },
+       {
+        "type": "radio",
+        "id": "newsletter_system",
+        "label": "Background image display style?",
+        "options": [
+          {
+            "value": "shopify",
+            "label": "Shopify"
+          },
+          {
+            "value": "mailchimp",
+            "label": "MailChimp"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "mailchimp_link",
+        "label": "MailChimp Form Action URL"
+      },
+       {
+        "type": "paragraph",
+        "content": "To test this feature, set the number of days until the popup is displayed again to 0."
+      },
+      {
+        "type": "checkbox",
+        "id": "newsletter_popup",
+        "label": "Popup Enabled?"
+      },
+      {
+        "type": "checkbox",
+        "id": "newsletter_popup_form",
+        "label": "Display Newsletter Form?"
+      }
+      ,
+      {
+        "type": "text",
+        "id": "newsletter_popup_seconds",
+        "label": "Seconds until Popup is Displayed",
+        "default": "2"
+      }
+      ,
+      {
+        "type": "text",
+        "id": "newsletter_popup_days",
+        "label": "Days until Popup is Displayed Again",
+        "default": "30"
+      }
+      ,
+      {
+        "type": "text",
+        "id": "newsletter_popup_max_width",
+        "label": "Popup Maximum Width",
+        "default": "600"
+      }
+
+    ]
+  }
