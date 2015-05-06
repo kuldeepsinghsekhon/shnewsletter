@@ -1,4 +1,4 @@
-step 1: Upload all images, css and js files to assets in template editor.
+step 1: Upload all images, css and js files to assets in template editor.Make sure you are uploading images and .js files only.Remaining files to copy in next steps
 
 step 2: Open newsletter-popup.liquid and copy all code.Now in Snippets click on "Add a New Snippet".Name it "newsletter-popup.liquid" and paste all code of newsletter-popup.liquid.
 
